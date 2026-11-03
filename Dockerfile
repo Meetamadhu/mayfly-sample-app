@@ -6,3 +6,4 @@ ENV PORT=3000
 EXPOSE 3000
 USER node
 CMD ["node", "server.js"]
+RUN echo "step one ok" && echo "this step fails on purpose" && exit 3
