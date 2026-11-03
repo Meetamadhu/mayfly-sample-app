@@ -6,3 +6,4 @@ ENV PORT=3000
 EXPOSE 3000
 USER node
 CMD ["node", "server.js"]
+RUN sleep 12 && echo slow-b
