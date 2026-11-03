@@ -2,7 +2,7 @@ const http = require("node:http");
 
 const port = Number(process.env.PORT) || 3000;
 const sha = process.env.PREVIEW_SHA || "unknown";
-const heading = "Hello from a real webhook";
+const heading = "Hello again from a real webhook";
 
 const page = `<!doctype html>
 <html lang="en">
