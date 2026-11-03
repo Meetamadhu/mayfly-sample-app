@@ -1,8 +1,6 @@
-FROM node:22-alpine
+FROM python:3-alpine
 WORKDIR /app
-COPY server.js ./server.js
-ENV HOST=0.0.0.0
+COPY app.py ./app.py
 ENV PORT=3000
 EXPOSE 3000
-USER node
-CMD ["node", "server.js"]
+CMD ["python", "app.py"]
