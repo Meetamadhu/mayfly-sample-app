@@ -14,8 +14,13 @@ const page = () => `<!doctype html>
 @font-face{font-family:"IBM Plex Sans";font-weight:400;font-display:swap;src:url("/fonts/IBMPlexSans-Regular.woff2") format("woff2")}
 @font-face{font-family:"IBM Plex Sans";font-weight:600;font-display:swap;src:url("/fonts/IBMPlexSans-SemiBold.woff2") format("woff2")}
 @font-face{font-family:"IBM Plex Sans";font-weight:700;font-display:swap;src:url("/fonts/IBMPlexSans-Bold.woff2") format("woff2")}
+<<<<<<< HEAD
 :root{color-scheme:light;--bg:#efece4;--surface:#f7f5ef;--ink:#1c1915;--muted:#6f685e;--line:#ddd6c8;--soft:#e7e1d4;--on-ink:#f7f5ef;--accent:#ef6b42;--band:#1d4e89;--radius:6px;--radius-lg:14px}
 html[data-theme="dark"]{color-scheme:dark;--bg:#0f1c19;--surface:#17302b;--ink:#e8f0ea;--muted:#9bb0a8;--line:#2a4540;--soft:#1f3a34;--on-ink:#0f1c19;--band:#2f5f9a}
+=======
+:root{color-scheme:light;--bg:#efece4;--surface:#f7f5ef;--ink:#1c1915;--muted:#6f685e;--line:#ddd6c8;--soft:#e7e1d4;--on-ink:#f7f5ef;--accent:#ef6b42;--band:#1d4e89;--radius:6px;--radius-lg:14px}
+html[data-theme="dark"]{color-scheme:dark;--bg:#0f1c19;--surface:#17302b;--ink:#e8f0ea;--muted:#9bb0a8;--line:#2a4540;--soft:#2a4a42;--on-ink:#0f1c19;--band:#2f5f9a}
+>>>>>>> main
 *{box-sizing:border-box}
 body{margin:0;min-height:100vh;display:grid;justify-items:center;align-content:start;gap:1rem;padding:1.25rem 1rem 2rem;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;font-size:16px;line-height:1.45}
 .strip{width:min(36rem,100%);display:flex;align-items:center;gap:.5rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:var(--radius-lg);background:var(--surface);color:var(--ink);text-decoration:none;font-weight:700;letter-spacing:-.03em}
@@ -33,7 +38,7 @@ dd{margin:0;font-family:ui-monospace,monospace;font-size:.9rem;word-break:break-
 .back{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-top:1.1rem;padding:.5rem .85rem;border:1px solid var(--ink);border-radius:var(--radius);background:var(--ink);color:var(--on-ink);font-weight:600;text-decoration:none}
 </style>
 <script>
-try{var t=localStorage.getItem("mayfly-theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(x){}
+(function(){var theme=null;try{var q=new URLSearchParams(location.search).get("mayfly_theme");if(q==="light"||q==="dark")theme=q}catch(e){}if(!theme){try{var stored=localStorage.getItem("mayfly-theme");if(stored==="light"||stored==="dark")theme=stored}catch(e){}}if(!theme){try{theme=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}catch(e){theme="light"}}document.documentElement.dataset.theme=theme})();
 </script>
 </head>
 <body>
