@@ -39,7 +39,7 @@ dd{margin:0;font-family:ui-monospace,monospace;font-size:.9rem;word-break:break-
 <body>
 <a class="strip" href="/board"><svg viewBox="0 0 40 36" aria-hidden="true"><path d="M19 30V13M20 18C-1 13 1-5 16 9l4 9C41-3 43 12 21 20M20 20C1 15 6 31 18 25M22 20c19-8 13 12 0 5M17 7l-3-5m8 5 4-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Mayfly</a>
 <main class="card">
-<div class="band"><p class="word">Live PR preview</p><p class="note">Built from this pull request's own code, in its own container.</p></div>
+<div class="band"><p class="word">Hello Live PR preview</p><p class="note">Built from this pull request's own code, in its own container.</p></div>
 <div class="body">
 <h1>Hello again from the pull request</h1>
 <p>This is the sample app. Every pull request gets its own copy of it, built by Mayfly.</p>
