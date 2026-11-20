@@ -41,7 +41,7 @@ try{var t=localStorage.getItem("mayfly-theme");if(t!=="light"&&t!=="dark")t=matc
 <main class="card">
 <div class="band"><p class="word">Live PR preview</p><p class="note">Built from this pull request's own code, in its own container.</p></div>
 <div class="body">
-<h1>Hello from Mayfly on AWS</h1><p>This is the sample app. Every pull request gets its own copy of it, built by Mayfly.</p>
+<h1>Hello from Mayfly on AWS 2</h1><p>This is the sample app. Every pull request gets its own copy of it, built by Mayfly.</p>
 <dl>
 <dt>Repository</dt><dd>${e(process.env.PREVIEW_REPOSITORY)}</dd>
 <dt>Pull request</dt><dd>#${e(process.env.PREVIEW_PR)}</dd>
