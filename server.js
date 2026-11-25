@@ -9,7 +9,7 @@ const page = () => `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sample app checking Testing · PR #${e(process.env.PREVIEW_PR)}</title>
+<title>Sample BUG Fixing checking Testing · PR #${e(process.env.PREVIEW_PR)}</title>
 <style>
 @font-face{font-family:"IBM Plex Sans";font-weight:400;font-display:swap;src:url("/fonts/IBMPlexSans-Regular.woff2") format("woff2")}
 @font-face{font-family:"IBM Plex Sans";font-weight:600;font-display:swap;src:url("/fonts/IBMPlexSans-SemiBold.woff2") format("woff2")}
